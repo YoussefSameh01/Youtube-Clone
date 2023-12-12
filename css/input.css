@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        font-family: 'Roboto', sans-serif;
+        scroll-behavior: smooth;
+    }
+}
+
+/* nav-bars & for-scrollbar heights */
+nav:not(.third-nav, .fourth-nav) {
+  height: calc(100vh - 4.7975rem);
+}
+
+@media (max-width: 1278px) {
+  .for-scrollbar {
+    height: calc(100% - 4.666875rem)
+  }
+}
+
+/* third-nav-bar width */
+@media (max-width: 1080px) {
+  .third-nav {
+    width: calc(100vw - 8.0625rem)
+  }
+}
+
+@media (max-width: 700px) {
+  .third-nav {
+    width: calc(100vw - 2.0625rem)
+  }
+}
+
+/* scrollbar */
+.scrollbar::-webkit-scrollbar,
+body::-webkit-scrollbar,
+.third-nav::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+.scrollbar::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+.third-nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+.third-nav::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  visibility: hidden;
+
+}
+
+.for-scrollbar:hover .scrollbar::-webkit-scrollbar-thumb {
+  visibility: visible;
+}

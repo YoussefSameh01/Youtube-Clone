@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en" class="max-[450px]:text-[14px] max-[350px]:text-[13px] max-[330px]:text-[12px] max-[310px]:text-[11px] max-[290px]:text-[10px]">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Youssef Sameh">
+        <meta name="keywords" content="videos, shorts, live, trends,">
+        <meta name="description" content=" Share your videos with friends, family, and the world.">
+        <title>Youtube</title>
+        <link rel="stylesheet" href="../css/output.css"/>
+        <!-- icons link -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    </head>
+    <body class="bg-primary text-white">
+        <!-- header -->
+        <header class=" bg-primary fixed top-0 w-full z-30">
+
+            <div class="flex justify-between px-3 max-w-[2000px] mx-auto">
+                <!-- left-sec -->
+                <section class="flex items-center">
+                    <label for="checkbox" class="max-[700px]:hidden">
+                        <span class="material-icons-outlined mr-2 p-2 rounded-full cursor-pointer hover:bg-[#393b3e]">
+                        menu
+                        </span>
+                    </label>
+                    <a href="#"><img src="../imgs/logo.png" alt="logo" class="w-28 mr-2" title="YouTube Home"/></a>
+                </section>
+
+                <!-- mid-sec -->
+                <section class="flex items-center w-5/12 max-[700px]:hidden">
+                    <div class="flex items-center w-full">
+                        <input type="text" placeholder="Search" autocomplete="off" 
+                        class="bg-primary border border-thin rounded-l-2xl w-full h-8 px-3 outline-0 focus:border-blue-500"
+                        />
+                        <div class="bg-sec h-8 w-14 flex items-center justify-center rounded-r-2xl border border-thin border-l-0 cursor-pointer">
+                            <span class="material-icons-outlined" title="Search">
+                                search
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <span
+                            class="material-icons-outlined bg-sec p-2 rounded-full ml-3 cursor-pointer hover:bg-[#393b3e]"
+                            title="Search with your voice"
+                        >
+                            mic
+                        </span>
+                    </div>
+                </section>
+
+                <!-- right-sec -->
+                <section class="flex items-center">
+                    <span class="material-icons-outlined ml-2 p-2 rounded-full cursor-pointer hover:bg-[#393b3e]" title="Create">
+                        video_call
+                    </span>
+                    <span class="material-icons-outlined ml-2 p-2 rounded-full cursor-pointer hover:bg-[#393b3e] relative" title="Notifications">
+                        notifications
+                        <div class="absolute w-4 h-4 bg-red-600 rounded-full top-2 right-1 text-[0.7rem] flex items-center justify-center max-[330px]:w-5 max-[330px]:h-5 max-[330px]:text-[0.8rem]">3</div>
+                    </span>
+                    <img src="../imgs/profile-pic.jpg" alt="profile-pic" class="w-7 rounded-full ml-4 cursor-pointer max-[700px]:hidden" title="You"/>
+                    <!-- mobile-version -->
+                    <span class="material-icons-outlined ml-2 p-2 rounded-full cursor-pointer hover:bg-[#393b3e] !hidden max-[700px]:!block" title="Search">
+                        search
+                    </span>
+                </section>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main class="mt-[4.7975rem] relative max-w-[2000px] mx-auto">
+
+            <!--main-nav-bar -->
+            <input type="checkbox" id="checkbox" class="peer hidden"/>
+            <nav class="w-64 bg-primary peer-checked:hidden fixed z-20 max-[1278px]:-translate-x-full
+            max-[1278px]:peer-checked:translate-x-0 max-[1278px]:peer-checked:block duration-200
+            max-[1278px]:-mt-[4.7975rem] max-[1278px]:z-50 max-[1278px]:!h-screen">
+                <!-- logo-sec-for-small-screens -->
+                <section class="items-center hidden max-[1278px]:flex px-3">
+                    <label for="checkbox">
+                        <span class="material-icons-outlined mr-2 p-2 rounded-full cursor-pointer hover:bg-[#393b3e]">
+                        menu
+                        </span>
+                    </label>
+                    <a href="#"><img src="../imgs/logo.png" alt="logo" class="w-28 mr-2" title="YouTube Home"/></a>
+                </section>
+                <div class="for-scrollbar h-full">
+                    <div class="scrollbar overflow-y-auto px-3 h-full">
+                        <!-- links -->
+                        <ul>
+                            <li>
+                                <a href="#" class="flex items-center bg-[#393b3e] rounded-xl p-2" title="Home">
+                                    <span class="material-icons mr-4">
+                                        home
+                                    </span>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center hover:bg-[#393b3e] rounded-xl p-2" title="Subscriptions">
+                                    <span class="material-icons-outlined mr-4">
+                                        subscriptions
+                                    </span>
+                                    Subscriptions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"  class="flex items-center hover:bg-[#393b3e] rounded-xl p-2" title="History">
+                                    <span class="material-icons-outlined mr-4">
+                                        history
+                                    </span>
+                                    History
+                                </a>
+                            </li>
+                            <li><hr class="border-0 h-[0.7px] bg-thin my-3"/></li>
+                            <li>
+                                <a href="#" class="flex items-center hover:bg-[#393b3e] rounded-xl p-2" title="Originals">
+                                    <span class="material-icons-outlined mr-4">
+                                        ondemand_video
+                                    </span>
+                                    Originals
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center hover:bg-[#393b3e] rounded-xl p-2" title="Watch Later">
+                                    <span class="material-icons-outlined mr-4">
+                                        watch_later
+                                    </span>
+                                    Watch Later
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center hover:bg-[#393b3e] rounded-xl p-2" title="Library">
+                                    <span class="material-icons-outlined mr-4">
+                                        video_library
+                                    </span>
+                                    Library
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center hover:bg-[#393b3e] rounded-xl p-2" title="Liked Videos">
+                                    <span class="material-icons-outlined mr-4">
+                                        thumb_up
+                                    </span>
+                                    Liked Videos
+                                </a>
+                            </li>
+                        </ul>
+                        <hr class="border-0 h-[0.7px] bg-thin my-3"/>
+
+                        <!-- subscriptions -->
+                        <ul>
+                            <li><p class="font-medium pl-2 mb-1">Subscriptions</p></li>
+                            <li>
+                                <a href="#" class="flex items-center  hover:bg-[#393b3e] rounded-xl p-2" title="Fireship">
+                                    <img src="../imgs/profile1-Fireship.jpg" class="w-6 rounded-full mr-4" alt="profile-pic">
+                                    Fireship
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center  hover:bg-[#393b3e] rounded-xl p-2 relative" title="freeCodeCamp.org">
+                                    <img src="../imgs/profile2-freeCodeCamp.org.jpg" class="w-6 rounded-full mr-4" alt="profile-pic">
+                                    freeCodeCamp.org
+                                    <div class="w-[6px] h-[6px] bg-blue-500 rounded-full absolute right-2"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center  hover:bg-[#393b3e] rounded-xl p-2 relative" title="Randy">
+                                    <img src="../imgs/profile3-Randy.jpg" class="w-6 rounded-full mr-4" alt="profile-pic">
+                                    Randy
+                                    <div class="w-[6px] h-[6px] bg-blue-500 rounded-full absolute right-2"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center  hover:bg-[#393b3e] rounded-xl p-2 relative" title="Web-Dev-Simplified">
+                                    <img src="../imgs/Web-Dev-Simplified-profile4.jpg" class="w-6 rounded-full mr-4" alt="profile-pic">
+                                    Web-Dev-Simplified
+                                    <div class="w-[6px] h-[6px] bg-blue-500 rounded-full absolute right-2"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center  hover:bg-[#393b3e] rounded-xl p-2 relative" title="Joma-Tech">
+                                    <img src="../imgs/Joma-Tech-profile5.jpg" class="w-6 rounded-full mr-4" alt="profile-pic">
+                                    Joma-Tech
+                                    <div class="w-[6px] h-[6px] bg-blue-500 rounded-full absolute right-2"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center  hover:bg-[#393b3e] rounded-xl p-2 relative" title="Nick-White">
+                                    <img src="../imgs/Nick-White-profile6.jpg" class="w-6 rounded-full mr-4" alt="profile-pic">
+                                    Nick-White
+                                    <div class="w-[6px] h-[6px] bg-blue-500 rounded-full absolute right-2"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center  hover:bg-[#393b3e] rounded-xl p-2 relative" title="The-Coding-Train">
+                                    <img src="../imgs/The-Coding-Train-profile7.jpg" class="w-6 rounded-full mr-4" alt="profile-pic">
+                                    The-Coding-Train
+                                    <div class="w-[6px] h-[6px] bg-blue-500 rounded-full absolute right-2"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center  hover:bg-[#393b3e] rounded-xl p-2 relative" title="Jason-Goodison">
+                                    <img src="../imgs/Jason-Goodison-profile8.jpg" class="w-6 rounded-full mr-4" alt="profile-pic">
+                                    Jason-Goodison
+                                    <div class="w-[6px] h-[6px] bg-blue-500 rounded-full absolute right-2"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center  hover:bg-[#393b3e] rounded-xl p-2 relative" title="Tim Kim">
+                                    <img src="../imgs/profile9.jpg" class="w-6 rounded-full mr-4" alt="profile-pic">
+                                    Tim Kim
+                                    <div class="w-[6px] h-[6px] bg-blue-500 rounded-full absolute right-2"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center  hover:bg-[#393b3e] rounded-xl p-2 relative" title="Clément Mihailescu">
+                                    <img src="../imgs/profile10.jpg" class="w-6 rounded-full mr-4" alt="profile-pic">
+                                    Clément Mihailescu
+                                    <div class="w-[6px] h-[6px] bg-blue-500 rounded-full absolute right-2"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center  hover:bg-[#393b3e] rounded-xl p-2 relative" title="ThePrimeTime">
+                                    <img src="../imgs/profile11.jpg" class="w-6 rounded-full mr-4" alt="profile-pic">
+                                    ThePrimeTime
+                                    <div class="w-[6px] h-[6px] bg-blue-500 rounded-full absolute right-2"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center  hover:bg-[#393b3e] rounded-xl p-2 relative" title="Andres Vidoza">
+                                    <img src="../imgs/profile12.jpg" class="w-6 rounded-full mr-4" alt="profile-pic">
+                                    Andres Vidoza
+                                    <div class="w-[6px] h-[6px] bg-blue-500 rounded-full absolute right-2"></div>
+                                </a>
+                            </li>
+                            <li><hr class="border-0 h-[0.7px] bg-thin my-3"/></li>
+                        </ul>
+
+                        <!-- explore -->
+                        <ul>
+                            <li><p class="font-medium pl-2 mb-1">Explore</p></li>
+                            <li>
+                                <a href="#" class="flex items-center hover:bg-[#393b3e] rounded-xl p-2"  title="Trending">
+                                    <span class="material-icons-outlined mr-4">
+                                        local_fire_department
+                                    </span>
+                                    Trending
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center hover:bg-[#393b3e] rounded-xl p-2" title="Music">
+                                    <span class="material-icons-outlined mr-4">
+                                        music_note
+                                    </span>
+                                    Music
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center hover:bg-[#393b3e] rounded-xl p-2" title="Live">
+                                    <span class="material-icons-outlined mr-4">
+                                        live_tv
+                                    </span>
+                                    Live
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center hover:bg-[#393b3e] rounded-xl p-2" title="Gaming">
+                                    <span class="material-icons-outlined mr-4">
+                                        sports_esports
+                                    </span>
+                                    Gaming
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center hover:bg-[#393b3e] rounded-xl p-2" title="Sport">
+                                    <span class="material-icons-outlined mr-4">
+                                        emoji_events
+                                        </span>
+                                    Sport
+                                </a>
+                            </li>
+                            <li><hr class="border-0 h-[0.7px] bg-thin my-3"/></li>
+                        </ul>
+
+                        <!-- services -->
+                    <ul>
+                        <li>
+                            <a href="#" class="flex items-center hover:bg-[#393b3e] rounded-xl p-2" title="Settings">
+                                <span class="material-icons-outlined mr-4">
+                                    settings
+                                    </span>
+                                Settings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center hover:bg-[#393b3e] rounded-xl p-2" title="Report history">
+                                <span class="material-icons-outlined mr-4">
+                                    flag
+                                </span>
+                                Report history
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center hover:bg-[#393b3e] rounded-xl p-2" title="Help">
+                                <span class="material-icons-outlined mr-4">
+                                    help_outline
+                                </span>
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center hover:bg-[#393b3e] rounded-xl p-2" title="Send feedback">
+                                <span class="material-icons-outlined mr-4">
+                                    announcement
+                                </span>
+                                Send feedback
+                            </a>
+                        </li>
+                        <li><hr class="border-0 h-[0.7px] bg-thin my-3"/></li>
+                    </ul>
+
+                    <!-- more services -->
+                    <ul class="px-2">
+                        <li class="mb-2 text-sm">
+                            <a href="#" class="text-[#b0b0b0] mr-1">About</a>
+                            <a href="#" class="text-[#b0b0b0] mr-1">Press</a>
+                            <a href="#" class="text-[#b0b0b0] mr-1">Copyright</a>
+                            <br>
+                            <a href="#" class="text-[#b0b0b0] mr-1">Contact us</a>
+                            <a href="#" class="text-[#b0b0b0] mr-1">Creator</a>
+                            <a href="#" class="text-[#b0b0b0] mr-1">Advertise Developers</a>
+                        </li>
+                        <li class="mb-2 text-sm">
+                            <a href="#" class="text-[#b0b0b0] mr-1">Terms</a>
+                            <a href="#" class="text-[#b0b0b0] mr-1">Privacy</a>
+                            <a href="#" class="text-[#b0b0b0] mr-1">Policy & Safety</a>
+                            <a href="#" class="text-[#b0b0b0] mr-1">How YouTube works</a>
+                            <br>
+                            <a href="#" class="text-[#b0b0b0] mr-1">Test new features</a>
+                        </li>
+                        <li><p class="text-xs font-light text-[#b0b0b0b2] mb-2">© 2023 Google LLC</p></li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- opacity -->
+            <label
+                for="checkbox"
+                class="absolute -mt-[4.7975rem] w-full h-screen bg-[#0000003d] z-40 hidden max-[1278px]:peer-checked:block duration-200"
+            >
+            </label>
+
+            <!-- sec-nav-bar -->
+            <nav class="w-24 bg-primary fixed z-10 max-[700px]:hidden">
+                <div class="scrollbar overflow-y-auto h-full">
+                    <ul>
+                        <li>
+                            <a href="#" class="flex flex-col items-center py-6 rounded-2xl hover:bg-[#393b3e]" title="Home">
+                                <span class="material-icons">
+                                    home
+                                </span>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex flex-col items-center py-6 rounded-2xl hover:bg-[#393b3e]"  title="Originals">
+                                <span class="material-icons-outlined">
+                                    ondemand_video
+                                </span>
+                                Originals
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex flex-col items-center py-6 rounded-2xl hover:bg-[#393b3e]"  title="History">
+                                <span class="material-icons-outlined">
+                                    history
+                                </span>
+                                History
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex flex-col items-center py-6 rounded-2xl hover:bg-[#393b3e]"  title="Library">
+                                <span class="material-icons-outlined">
+                                    video_library
+                                </span>
+                                Library
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <!-- primary-sec -->
+            <section class="ml-64 peer-checked:ml-24 relative px-3 max-[1278px]:ml-24 max-[700px]:ml-0">
+                <!-- third-nav -->
+                <nav class="third-nav absolute left-1/2 -translate-x-1/2 overflow-x-auto max-[1080px]:translate-x-0 max-[1080px]:left-3">
+                    <ul class="flex my-2">
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] mr-3 duration-200" title="All">All</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] mr-3 duration-200" title="Live">Live</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] mr-3 duration-200" title="Programming">Programming</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] mr-3 duration-200" title="Html">Html</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] mr-3 duration-200" title="Css">Css</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] mr-3 duration-200" title="JavaScript">JavaScript</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] mr-3 duration-200" title="React">React</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] mr-3 duration-200" title="Sass">Sass</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] mr-3 duration-200" title="Github">Github</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] duration-200" title="Git">Git</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] ml-3 duration-200" title="Tailwind">Tailwind</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] ml-3 duration-200 hidden min-[1350px]:inline" title="Bootstrap">Bootstrap</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] ml-3 duration-200 hidden min-[1450px]:inline" title="Postcss">Postcss</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] ml-3 duration-200 hidden min-[1550px]:inline" title="Laravel">Laravel</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] ml-3 duration-200 hidden min-[1650px]:inline" title="C++">C++</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] ml-3 duration-200 hidden min-[1750px]:inline" title="Angular">Angular</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] ml-3 duration-200 hidden min-[1850px]:inline" title="Python">Python</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[0.4rem] px-4 rounded-lg bg-sec hover:bg-[#393b3e] ml-3 duration-200 hidden min-[1950px]:inline" title="Django">Django</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="clear h-[5rem]"></div>
+
+                <!-- videos-sec -->
+                <section>
+                    <div class="flex flex-wrap justify-between">
+
+                        <a href="#" class="card w-[24.3%] mb-4 max-[1071px]:w-[49.3%] max-[600px]:w-full">
+                            <div class="relative mb-2">
+                                <img src="../imgs/video1.jpg" alt="Poster" class="w-full rounded-lg">
+                                <div class="absolute right-1 bottom-1 px-[0.2rem] rounded-[0.1875rem] bg-[#000000c0] text-[0.75rem]">9:32</div>
+                            </div>
+                            <div class="flex">
+                                <img src="../imgs/profile1-Fireship.jpg" alt="profile-pic" class="rounded-full max-h-[2rem]" title="Fireship">
+                                <div class="text-[#aba9a9] ml-2">
+                                    <p class="text-white">10 Math Concepts for Programmers</p>
+                                    <p class="flex items-center">
+                                        Fireship 
+                                        <span class="material-icons text-xs scale-[0.6] cursor-pointer" title="Verified">
+                                            check_circle
+                                        </span>
+                                    </p>
+                                    <p>1.4M views • 7 months ago</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="card w-[24.3%] mb-4 max-[1071px]:w-[49.3%]  max-[600px]:w-full">
+                            <div class="relative mb-2">
+                                <img src="../imgs/video2.jpg" alt="Poster" class="w-full rounded-lg">
+                                <div class="absolute right-1 bottom-1 px-[0.2rem] rounded-[0.1875rem] bg-[#000000c0] text-[0.75rem]">4:12:18</div>
+                            </div>
+                            <div class="flex">
+                                <img src="../imgs/profile2-freeCodeCamp.org.jpg" alt="profile-pic" class="rounded-full max-h-[2rem]" title="freeCodeCamp">
+                                <div class="text-[#aba9a9] ml-2">
+                                    <p class="text-white">Learn Tailwind CSS – Course for Beginners</p>
+                                    <p class="flex items-center">
+                                        freeCodeCamp
+                                        <span class="material-icons text-xs scale-[0.6] cursor-pointer" title="Verified">
+                                            check_circle
+                                        </span>
+                                    </p>
+                                    <p>312K views • 10 months ago</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="card w-[24.3%] mb-4 max-[1071px]:w-[49.3%] max-[600px]:w-full">
+                            <div class="relative mb-2">
+                                <img src="../imgs/video3.webp" alt="Poster" class="w-full rounded-lg">
+                                <div class="absolute right-1 bottom-1 px-[0.2rem] rounded-[0.1875rem] bg-[#000000c0] text-[0.75rem]">6:00</div>
+                            </div>
+                            <div class="flex">
+                                <img src="../imgs/profile3-Randy.jpg" alt="profile-pic" class="rounded-full max-h-[2rem]" title="Randy">
+                                <div class="text-[#aba9a9] ml-2">
+                                    <p class="text-white">Programming an entire game from scratch</p>
+                                    <p class="flex items-center">
+                                        Randy
+                                        <span class="material-icons text-xs scale-[0.6] cursor-pointer" title="Verified">
+                                            check_circle
+                                        </span>
+                                    </p>
+                                    <p>318K views • 6 months ago</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="card w-[24.3%] mb-4 max-[1071px]:w-[49.3%] max-[600px]:w-full">
+                            <div class="relative mb-2">
+                                <img src="../imgs/video4.webp" alt="Poster" class="w-full rounded-lg">
+                                <div class="absolute right-1 bottom-1 px-[0.2rem] rounded-[0.1875rem] bg-[#000000c0] text-[0.75rem]">12:11</div>
+                            </div>
+                            <div class="flex">
+                                <img src="../imgs/Web-Dev-Simplified-profile4.jpg" alt="profile-pic" class="rounded-full max-h-[2rem]" title="Web-Dev-Simplified">
+                                <div class="text-[#aba9a9] ml-2">
+                                    <p class="text-white">How To Setup Prettier</p>
+                                    <p class="flex items-center">
+                                        Web-Dev-Simplified
+                                        <span class="material-icons text-xs scale-[0.6] cursor-pointer" title="Verified">
+                                            check_circle
+                                        </span>
+                                    </p>
+                                    <p>103K views • 10 months ago</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-wrap justify-between">
+
+                        <a href="#" class="card w-[24.3%] mb-4 max-[1071px]:w-[49.3%] max-[600px]:w-full">
+                            <div class="relative mb-2">
+                                <img src="../imgs/video5.webp" alt="Poster" class="w-full rounded-lg">
+                                <div class="absolute right-1 bottom-1 px-[0.2rem] rounded-[0.1875rem] bg-[#000000c0] text-[0.75rem]">5:03</div>
+                            </div>
+                            <div class="flex">
+                                <img src="../imgs/Joma-Tech-profile5.jpg" alt="profile-pic" class="rounded-full max-h-[2rem]" title="Joma-Tech">
+                                <div class="text-[#aba9a9] ml-2">
+                                    <p class="text-white">why you NEED math for programming</p>
+                                    <p class="flex items-center">
+                                        Joma-Tech
+                                        <span class="material-icons text-xs scale-[0.6] cursor-pointer" title="Verified">
+                                            check_circle
+                                        </span>
+                                    </p>
+                                    <p>8.1M views • 2 years ago</p>
+                                </div>
+                            </div>  
+                        </a>
+
+                        <a href="#" class="card w-[24.3%] mb-4 max-[1071px]:w-[49.3%] max-[600px]:w-full">
+                            <div class="relative mb-2">
+                                <img src="../imgs/video6.webp" alt="Poster" class="w-full rounded-lg">
+                                <div class="absolute right-1 bottom-1 px-[0.2rem] rounded-[0.1875rem] bg-[#000000c0] text-[0.75rem]">10:04</div>
+                            </div>
+                            <div class="flex">
+                                <img src="../imgs/Nick-White-profile6.jpg" alt="profile-pic" class="rounded-full max-h-[2rem]" title="Nick-White">
+                                <div class="text-[#aba9a9] ml-2">
+                                    <p class="text-white">How I Make $50/Hour Freelance Programming on Upwork!</p>
+                                    <p class="flex items-center">
+                                        Nick-White
+                                        <span class="material-icons text-xs scale-[0.6] cursor-pointer" title="Verified">
+                                            check_circle
+                                        </span>
+                                    </p>
+                                    <p>202K views • 2 years ago</p>
+                                </div>
+                            </div>  
+                        </a>
+
+                        <a href="#" class="card w-[24.3%] mb-4 max-[1071px]:w-[49.3%] max-[600px]:w-full">
+                            <div class="relative mb-2">
+                                <img src="../imgs/video7.webp" alt="Poster" class="w-full rounded-lg">
+                                <div class="absolute right-1 bottom-1 px-[0.2rem] rounded-[0.1875rem] bg-[#000000c0] text-[0.75rem]">45:40</div>
+                            </div>
+                            <div class="flex">
+                                <img src="../imgs/The-Coding-Train-profile7.jpg" alt="profile-pic" class="rounded-full max-h-[2rem]" title="The-Coding-Train">
+                                <div class="text-[#aba9a9] ml-2">
+                                    <p class="text-white">Coding Challenge: 3D on Apple II</p>
+                                    <p class="flex items-center">
+                                        The-Coding-Train
+                                        <span class="material-icons text-xs scale-[0.6] cursor-pointer" title="Verified">
+                                            check_circle
+                                        </span>
+                                    </p>
+                                    <p>290K views • 1 year ago</p>
+                                </div>
+                            </div>  
+                        </a>
+
+                        <a href="#" class="card w-[24.3%] mb-4 max-[1071px]:w-[49.3%] max-[600px]:w-full">
+                            <div class="relative mb-2">
+                                <img src="../imgs/video8.webp" alt="Poster" class="w-full rounded-lg">
+                                <div class="absolute right-1 bottom-1 px-[0.2rem] rounded-[0.1875rem] bg-[#000000c0] text-[0.75rem]">9:16</div>
+                            </div>
+                            <div class="flex">
+                                <img src="../imgs/Jason-Goodison-profile8.jpg" alt="profile-pic" class="rounded-full max-h-[2rem]" title="Jason-Goodison">
+                                <div class="text-[#aba9a9] ml-2">
+                                    <p class="text-white">How I would learn to code (If I could start over)</p>
+                                    <p class="flex items-center">
+                                        Jason-Goodison
+                                        <span class="material-icons text-xs scale-[0.6] cursor-pointer" title="Verified">
+                                            check_circle
+                                        </span>
+                                    </p>
+                                    <p>3.8M views • 1 year ago</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-wrap justify-between">
+
+                        <a href="#" class="card w-[24.3%] mb-4 max-[1071px]:w-[49.3%] max-[600px]:w-full">
+                            <div class="relative mb-2">
+                                <img src="../imgs/video9.webp" alt="Poster" class="w-full rounded-lg">
+                                <div class="absolute right-1 bottom-1 px-[0.2rem] rounded-[0.1875rem] bg-[#000000c0] text-[0.75rem]">9:51</div>
+                            </div>
+                            <div class="flex">
+                                <img src="../imgs/profile9.jpg" alt="profile-pic" class="rounded-full max-h-[2rem]" title="Tim Kim">
+                                <div class="text-[#aba9a9] ml-2">
+                                    <p class="text-white">How I Learned to Code in 4 Months & Got a Job! (No CS Degree, No Bootcamp)</p>
+                                    <p class="flex items-center">
+                                        Tim Kim
+                                    </p>
+                                    <p>2.9M views • 5 months ago</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="card w-[24.3%] mb-4 max-[1071px]:w-[49.3%] max-[600px]:w-full">
+                            <div class="relative mb-2">
+                                <img src="../imgs/video10.webp" alt="Poster" class="w-full rounded-lg">
+                                <div class="absolute right-1 bottom-1 px-[0.2rem] rounded-[0.1875rem] bg-[#000000c0] text-[0.75rem]">57:24</div>
+                            </div>
+                            <div class="flex">
+                                <img src="../imgs/profile10.jpg" alt="profile-pic" class="rounded-full max-h-[2rem]" title="Clément Mihailescu">
+                                <div class="text-[#aba9a9] ml-2">
+                                    <p class="text-white">Google Coding Interview With A High School Student</p>
+                                    <p class="flex items-center">
+                                        Clément Mihailescu
+                                        <span class="material-icons text-xs scale-[0.6] cursor-pointer" title="Verified">
+                                            check_circle
+                                        </span>
+                                    </p>
+                                    <p>3.7M views • 3 years ago</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="card w-[24.3%] mb-4 max-[1071px]:w-[49.3%] max-[600px]:w-full">
+                            <div class="relative mb-2">
+                                <img src="../imgs/video11.webp" alt="Poster" class="w-full rounded-lg">
+                                <div class="absolute right-1 bottom-1 px-[0.2rem] rounded-[0.1875rem] bg-[#000000c0] text-[0.75rem]">20:37</div>
+                            </div>
+                            <div class="flex">
+                                <img src="../imgs/profile11.jpg" alt="profile-pic" class="rounded-full max-h-[2rem]" title="ThePrimeTime">
+                                <div class="text-[#aba9a9] ml-2">
+                                    <p class="text-white">I Solved 1583 Leetcode Questions Here's What I Learned</p>
+                                    <p class="flex items-center">
+                                        ThePrimeTime
+                                        <span class="material-icons text-xs scale-[0.6] cursor-pointer" title="Verified">
+                                            check_circle
+                                        </span>
+                                    </p>
+                                    <p>120K views • 6 days ago</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="card w-[24.3%] mb-4 max-[1071px]:w-[49.3%] max-[700px]:mb-[4.5rem] max-[600px]:w-full">
+                            <div class="relative mb-2">
+                                <img src="../imgs/video12.webp" alt="Poster" class="w-full rounded-lg">
+                                <div class="absolute right-1 bottom-1 px-[0.2rem] rounded-[0.1875rem] bg-[#000000c0] text-[0.75rem]">16:28</div>
+                            </div>
+                            <div class="flex">
+                                <img src="../imgs/profile12.jpg" alt="profile-pic" class="rounded-full max-h-[2rem]" title="Andres Vidoza">
+                                <div class="text-[#aba9a9] ml-2">
+                                    <p class="text-white">Setting up M2 MacBook Air For Programming</p>
+                                    <p class="flex items-center">
+                                        Andres Vidoza
+                                        <span class="material-icons text-xs scale-[0.6] cursor-pointer" title="Verified">
+                                            check_circle
+                                        </span>
+                                    </p>
+                                    <p>877k views • 1 year ago</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </section>
+            </section>
+        </main>
+        <!-- fourth-nav-mobile-version -->
+        <nav class="fourth-nav bg-primary h-14 w-full fixed bottom-0 justify-center items-center border-t-2 border-sec hidden max-[700px]:flex max-[330px]:h-[4rem]">
+            <ul class="flex w-4/5 justify-between max-[550px]:w-[95%]">
+                <li>
+                    <a href="#" class="flex flex-col justify-center items-center hover:bg-[#393b3e] px-4 pt-1 rounded-lg" title="Home">
+                        <span class="material-icons">
+                            home
+                        </span>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex flex-col justify-center items-center hover:bg-[#393b3e] px-4 pt-1 rounded-lg" title="Originals">
+                        <span class="material-icons-outlined relative">
+                            ondemand_video
+                            <div class="absolute w-4 h-4 bg-red-600 rounded-full top-0 -right-1 text-[0.7rem] flex items-center justify-center max-[330px]:w-5 max-[330px]:h-5 max-[330px]:text-[0.8rem]">2</div>
+                        </span>
+                        Originals
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:bg-[#393b3e] px-4 pt-1 pb-3 rounded-lg block max-[330px]:pt-2" title="Create">
+                        <div class="border-2 w-10 h-10 rounded-full flex justify-center items-center text-5xl">
+                            +
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex flex-col justify-center items-center hover:bg-[#393b3e] px-4 pt-1 rounded-lg" title="Library">
+                        <span class="material-icons-outlined">
+                            video_library
+                        </span>
+                        Library
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex flex-col justify-center items-center hover:bg-[#393b3e] px-4 pt-1 rounded-lg max-[330px]:pb-1" title="You">
+                        <img src="../imgs/profile-pic.jpg" alt="profile-pic" class="w-7 rounded-full"/>
+                        You
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
