@@ -39,7 +39,7 @@ nav:not(.third-nav, .fourth-nav) {
 body::-webkit-scrollbar,
 .third-nav::-webkit-scrollbar {
   width: 9px;
-  height: 9px;
+  height: 8px;
 }
 
 .scrollbar::-webkit-scrollbar-track,
