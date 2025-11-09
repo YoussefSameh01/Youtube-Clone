@@ -15,7 +15,7 @@ nav:not(.third-nav, .fourth-nav) {
   height: calc(100vh - 4.7975rem);
 }
 
-@media (max-width: 1278px) {
+@media (max-width: 1277px) {
   .for-scrollbar {
     height: calc(100% - 4.666875rem)
   }
