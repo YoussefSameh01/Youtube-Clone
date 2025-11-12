@@ -3,12 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
+@layer base {
     * {
-        font-family: 'Roboto', sans-serif;
         scroll-behavior: smooth;
     }
-} */
+}
 
 /* nav-bars & for-scrollbar heights */
 nav:not(.third-nav, .fourth-nav) {
